@@ -1,0 +1,23 @@
+﻿<Window x:Class="Task3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="234" Width="285">
+    <Grid Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxElapsed" HorizontalAlignment="Left" Margin="135,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" IsEnabled="False"/>
+        <Button x:Name="ButtonStart" Content="Start" HorizontalAlignment="Left" Height="25" Margin="13,45,0,0" VerticalAlignment="Top" Width="62" Click="ButtonStart_Click"/>
+        <Button x:Name="ButtonStop" Content="Stop" HorizontalAlignment="Left" Height="25" Margin="102,45,0,0" VerticalAlignment="Top" Width="62" Click="ButtonStop_Click"/>
+        <Button x:Name="ButtonReset" Content="Reset" HorizontalAlignment="Left" Height="25" Margin="189,45,0,0" VerticalAlignment="Top" Width="62" Click="ButtonReset_Click"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="32" Margin="10,79,0,0" VerticalAlignment="Top" Width="245"/>
+        <TextBox x:Name="TextBoxStart" HorizontalAlignment="Left" Margin="10,10,0,0" Text="0:00:10" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox x:Name="TextBoxExeptions" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="66" IsEnabled="False"/>
+
+    </Grid>
+</Window>
