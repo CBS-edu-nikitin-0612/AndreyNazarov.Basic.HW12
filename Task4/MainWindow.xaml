@@ -1,0 +1,19 @@
+﻿<Window x:Class="Task4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="382" Width="265">
+    <Grid>
+        <TextBox x:Name="TextBoxMain" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Text="0" TextAlignment="Right"/>
+        <Button x:Name="ButtonAdd" Content="+" HorizontalAlignment="Left" Height="33" Margin="10,49,0,0" VerticalAlignment="Top" Width="44" Click="ButtonAdd_Click"/>
+        <Button x:Name="ButtonSub" Content="-" HorizontalAlignment="Left" Height="33" Margin="59,49,0,0" VerticalAlignment="Top" Width="44" Click="ButtonSub_Click"/>
+        <Button x:Name="ButtonMult" Content="*" HorizontalAlignment="Left" Height="33" Margin="108,49,0,0" VerticalAlignment="Top" Width="44" Click="ButtonMult_Click"/>
+        <Button x:Name="ButtonDiv" Content="/" HorizontalAlignment="Left" Height="33" Margin="157,49,0,0" VerticalAlignment="Top" Width="44" Click="ButtonDiv_Click"/>
+        <Button x:Name="ButtonEnter" Content="Enter" HorizontalAlignment="Left" Height="33" Margin="10,87,0,0" VerticalAlignment="Top" Width="191" Click="ButtonEnter_Click"/>
+        <TextBlock x:Name="TextBlockExceprion" HorizontalAlignment="Left" Height="164" Margin="10,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" IsEnabled="False"/>
+
+    </Grid>
+</Window>
