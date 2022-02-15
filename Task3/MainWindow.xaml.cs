@@ -33,13 +33,13 @@ namespace Task3
         }
 
         private void ButtonStart_Click(object sender, RoutedEventArgs e)
-        {
-            presenter.InvokeStart(sender, e);
+        {            
+            Start.Invoke(sender, e);
         }
 
         private void ButtonStop_Click(object sender, RoutedEventArgs e)
         {
-            presenter.InvokeStop(sender, e);
+            Stop.Invoke(sender, e);
         }
 
         public void PrintException(string exceptionMessage)
@@ -49,7 +49,7 @@ namespace Task3
 
         private void ButtonReset_Click(object sender, RoutedEventArgs e)
         {
-            presenter.InvokeReset(sender, e);
+            Reset.Invoke(sender, e);
         }
 
         public void UpdateProgressBar(double value)
