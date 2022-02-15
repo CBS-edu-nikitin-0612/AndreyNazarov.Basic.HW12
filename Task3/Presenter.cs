@@ -17,18 +17,18 @@ namespace Task3
             view.Stop += new EventHandler(InvokeStop);
             view.Reset += new EventHandler(InvokeReset);
         }
-        public void InvokeStart(object sender, EventArgs e)
+        private void InvokeStart(object sender, EventArgs e)
         {
             model.ArrangeNewTimer(view.TextBoxStart.Text);
             view.ProgressBar.Maximum = model.Timer.TotalSeconds;
             thread = new Thread(Run);
             thread.Start();
         }
-        public void InvokeStop(object sender, EventArgs e)
+        private void InvokeStop(object sender, EventArgs e)
         {
             isStop = true;
         }
-        public void InvokeReset(object sender, EventArgs e)
+        private void InvokeReset(object sender, EventArgs e)
         {
             model.Reset();
         }
